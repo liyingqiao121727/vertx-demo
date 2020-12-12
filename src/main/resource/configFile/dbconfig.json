@@ -1,10 +1,10 @@
 {
 	"mysqlOperation": {
-		"host": "192.168.100.111",
+		"host": "12.16.10.1",
 		"port": 3306,
 		"maxPoolSize": 10,
 		"username": "root",
-		"password": "bgiTest@411",
+		"password": "123456",
 		"database": "earth-energy",
 		"charset": "UTF-8",
 		"connectTimeout": 10000,
@@ -17,11 +17,11 @@
 	},
 
 	"misMysqlBack": {
-		"host": "192.168.100.111",
+		"host": "12.18.10.1",
 		"port": 3306,
 		"maxPoolSize": 10,
 		"username": "root",
-		"password": "bgiTest@411",
+		"password": "123456",
 		"database": "bgi-earth-energy",
 		"charset": "UTF-8",
 		"connectTimeout": 10000,
@@ -34,11 +34,11 @@
 	},
 
 	"misMysql": {
-		"host": "192.168.100.71",
+		"host": "12.18.10.1",
 		"port": 4217,
 		"maxPoolSize": 10,
 		"username": "root",
-		"password": "b0g2i1d4a~t@a+s#y*nc",
+		"password": "123456",
 		"database": "foundation-management",
 		"charset": "UTF-8",
 		"connectTimeout": 10000,
