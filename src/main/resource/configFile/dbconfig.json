@@ -1,0 +1,53 @@
+{
+	"mysqlOperation": {
+		"host": "192.168.100.111",
+		"port": 3306,
+		"maxPoolSize": 10,
+		"username": "root",
+		"password": "bgiTest@411",
+		"database": "earth-energy",
+		"charset": "UTF-8",
+		"connectTimeout": 10000,
+		"testTimeout": 10000,
+		"queryTimeout": 10000,
+		"maxConnectionRetries": 0,
+		//"sslRootCert": <pathtofilewithcertificate>
+		//"sslMode": "disable"|"prefer"|"require"|"verify-ca"|"verify-full">,
+		"connectionRetryDelay": 5000
+	},
+
+	"misMysqlBack": {
+		"host": "192.168.100.111",
+		"port": 3306,
+		"maxPoolSize": 10,
+		"username": "root",
+		"password": "bgiTest@411",
+		"database": "bgi-earth-energy",
+		"charset": "UTF-8",
+		"connectTimeout": 10000,
+		"testTimeout": 10000,
+		"queryTimeout": 10000,
+		"maxConnectionRetries": 0,
+		//"sslRootCert": <pathtofilewithcertificate>
+		//"sslMode": "disable"|"prefer"|"require"|"verify-ca"|"verify-full">,
+		"connectionRetryDelay": 5000
+	},
+
+	"misMysql": {
+		"host": "192.168.100.71",
+		"port": 4217,
+		"maxPoolSize": 10,
+		"username": "root",
+		"password": "b0g2i1d4a~t@a+s#y*nc",
+		"database": "foundation-management",
+		"charset": "UTF-8",
+		"connectTimeout": 10000,
+		"testTimeout": 10000,
+		"queryTimeout": 10000,
+		"maxConnectionRetries": 0,
+		//"sslRootCert": <pathtofilewithcertificate>
+		//"sslMode": "disable"|"prefer"|"require"|"verify-ca"|"verify-full">,
+		"connectionRetryDelay": 5000
+	}
+
+}

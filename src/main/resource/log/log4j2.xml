@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL -->
+<Configuration status="WARN" monitorInterval="60"><!-- self log level -->
+
+    <Properties>
+        <Property name="log_path">D:/test/log/</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--<ThresholdFilter level="WARN" onMatch="ACCEPT" onMismatch="DENY" />-->
+            <PatternLayout pattern="[%d][%t][%p][%c:%L] %m%n"/>
+        </Console>
+        <RollingFile name="DailyRollingFile" fileName="${log_path}/zcrTest.log" filePattern="${log_path}/zcrTest%d{yyyy-MM-dd}-%i.log.gz">
+            <Filters>
+                <ThresholdFilter level="INFO"/>
+                <!--<ThresholdFilter level="WARN" onMatch="DENY" onMismatch="NEUTRAL"/>-->
+            </Filters>
+            <PatternLayout pattern="[%d][%t][%p][%c:%L] %m%n"/>
+            <!--<TimeBasedTriggeringPolicy interval="1"/>-->
+            <SizeBasedTriggeringPolicy size="10MB"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="DailyRollingFile"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

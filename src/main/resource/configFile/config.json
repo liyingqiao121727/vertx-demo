@@ -1,0 +1,53 @@
+{
+	"scanPackages" : "com.bgi",
+	"controller.location" : "com.bgi.business.controller, com.bgi.business.controller",
+	"websocket.location" : "com.bgi.business.websocket",
+	"bean.config.location" : "com.bgi.configuration",
+	"salaryTemplateLocation" : "C:/template/bgi.xlsx",
+	"payTemplateLocation" : "C:/template/bgi.xlsx",
+	"attendTemplateLocation" : "using/attend.xlsx",
+	"attendEarthEnergyTemplateLocation" : "using/attend-earth-energy.xlsx",
+	"glodonTemplateLocation" : "using/glodon.xlsx",
+	"otherTemplateLocation" : "using/other-fee.xlsx",
+	"shareTemplateLocation" : "using/share-fee.xlsx",
+	"projectTotalLocation" : "using/project-total.xlsx",
+	"workerPoolSize" : 1000,
+	"blockedThreadCheckInterval" : 60,
+	"blockedThreadCheckIntervalUnit" : "SECONDS",
+	"maxWorkerExecuteTime" : 60,
+	"maxWorkerExecuteTimeUnit" : "SECONDS",
+	"internalBlockingPoolSize" : 1000,
+	"port" : 8080,
+	"urlPrefix" : "/earth/energy",
+	"webSocketPushUrls" : [{
+		"host" : "127.0.0.1",
+		"port" : 8080,
+		"url" : "/notice/push"
+	}],
+
+	"bgiUrl" : {
+		"host" : "127.0.0.1",
+		"port" : 9997,
+		"login" : {
+			"requestUri" : "/auth/oauth/token/ebgi"
+		},
+		"mobileLogin" : {
+			"requestUri" : "/auth/oauth/token/ebgi"
+		},
+		"userInfo" : {
+			"requestUri" : "/earth/energy/mis/user/"
+		}
+	},
+
+	"misUrl" : {
+		"host" : "127.0.0.1",
+		"port" : 9997,
+		"project" : {
+			"requestUri" : "/earth/energy/project/in"
+		}
+	},
+
+	//"/usr/share/fonts/chiness/simsun.ttc,1"
+	"fontPath" : "using/simsun.ttf"
+
+}
